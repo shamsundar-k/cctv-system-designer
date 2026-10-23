@@ -1,0 +1,203 @@
+/* CCTV Designer design tokens | light themes */
+/* Level 1: primitive palette */
+:root {
+  /* forest */
+  --palette-forest-50: #F1F7F2;
+  --palette-forest-100: #DFEDE2;
+  --palette-forest-200: #BEDBC6;
+  --palette-forest-300: #91BEA2;
+  --palette-forest-400: #5F9B79;
+  --palette-forest-500: #367A57;
+  --palette-forest-600: #246445;
+  --palette-forest-700: #1A5038;
+  --palette-forest-800: #1A3C2C;
+  --palette-forest-900: #102F24;
+  --palette-forest-950: #081B14;
+  /* orange */
+  --palette-orange-50: #FFF5ED;
+  --palette-orange-100: #FFE7D2;
+  --palette-orange-200: #FFD0AC;
+  --palette-orange-300: #FFB079;
+  --palette-orange-400: #FF9148;
+  --palette-orange-500: #FF751D;
+  --palette-orange-600: #E85D0E;
+  --palette-orange-700: #C64A09;
+  --palette-orange-800: #9D390B;
+  --palette-orange-900: #792F10;
+  --palette-orange-950: #451706;
+  /* charcoal */
+  --palette-charcoal-50: #F5F5F4;
+  --palette-charcoal-100: #E7E7E6;
+  --palette-charcoal-200: #CECECC;
+  --palette-charcoal-300: #ADADAA;
+  --palette-charcoal-400: #858583;
+  --palette-charcoal-500: #686868;
+  --palette-charcoal-600: #505152;
+  --palette-charcoal-700: #424345;
+  --palette-charcoal-800: #292B2A;
+  --palette-charcoal-900: #1B1B1D;
+  --palette-charcoal-950: #101112;
+  /* gold */
+  --palette-gold-50: #FFF8E9;
+  --palette-gold-100: #FCECCE;
+  --palette-gold-200: #F8DDA4;
+  --palette-gold-300: #F0C66F;
+  --palette-gold-400: #E4AF45;
+  --palette-gold-500: #D59B30;
+  --palette-gold-600: #C58725;
+  --palette-gold-700: #A66C16;
+  --palette-gold-800: #865311;
+  --palette-gold-900: #6B400F;
+  --palette-gold-950: #3E2508;
+  /* neutral */
+  --palette-neutral-50: #FFFCF8;
+  --palette-neutral-100: #F9F6EF;
+  --palette-neutral-200: #F0EBE3;
+  --palette-neutral-300: #E7DFD5;
+  --palette-neutral-400: #D4C8BA;
+  --palette-neutral-500: #B9AC9F;
+  --palette-neutral-600: #978B80;
+  --palette-neutral-700: #77716D;
+  --palette-neutral-800: #57534F;
+  --palette-neutral-900: #36332F;
+  --palette-neutral-950: #1C1917;
+  /* green-neutral */
+  --palette-green-neutral-50: #FFFDF8;
+  --palette-green-neutral-100: #F9F6EF;
+  --palette-green-neutral-200: #F0F1E6;
+  --palette-green-neutral-300: #E1E6DB;
+  --palette-green-neutral-400: #C9D2C7;
+  --palette-green-neutral-500: #AABBAE;
+  --palette-green-neutral-600: #809B89;
+  --palette-green-neutral-700: #718078;
+  --palette-green-neutral-800: #475750;
+  --palette-green-neutral-900: #253E31;
+  --palette-green-neutral-950: #102F24;
+  /* Additional exact colour values used by semantic tokens */
+  --palette-white: #FFFFFF;
+  --palette-specific-07190eb3: #07190EB3;
+  --palette-specific-0b241a: #0B241A;
+  --palette-specific-101010b3: #101010B3;
+  --palette-specific-111213: #111213;
+  --palette-specific-123123: #123123;
+  --palette-specific-176747: #176747;
+  --palette-specific-1a6b47: #1A6B47;
+  --palette-specific-1b1c1d: #1B1C1D;
+  --palette-specific-237a4b: #237A4B;
+  --palette-specific-256cb4: #256CB4;
+  --palette-specific-284c3b: #284C3B;
+  --palette-specific-505052: #505052;
+  --palette-specific-758078: #758078;
+  --palette-specific-777477: #777477;
+  --palette-specific-9c6215: #9C6215;
+  --palette-specific-a45f11: #A45F11;
+  --palette-specific-a89b8c: #A89B8C;
+  --palette-specific-b56b11: #B56B11;
+  --palette-specific-c83c3c: #C83C3C;
+  --palette-specific-d0ddd4: #D0DDD4;
+  --palette-specific-d5d5d5: #D5D5D5;
+  --palette-specific-d8e4d9: #D8E4D9;
+  --palette-specific-e0efe2: #E0EFE2;
+  --palette-specific-e2d3be: #E2D3BE;
+  --palette-specific-e5f4ea: #E5F4EA;
+  --palette-specific-e6e9e2: #E6E9E2;
+  --palette-specific-e6f0fc: #E6F0FC;
+  --palette-specific-e7e1da: #E7E1DA;
+  --palette-specific-e8dfd4: #E8DFD4;
+  --palette-specific-e8ede4: #E8EDE4;
+  --palette-specific-ece5dc: #ECE5DC;
+  --palette-specific-eee5d9: #EEE5D9;
+  --palette-specific-f4e6ce: #F4E6CE;
+  --palette-specific-f6f1eb: #F6F1EB;
+  --palette-specific-fce8e8: #FCE8E8;
+  --palette-specific-fff1d9: #FFF1D9;
+  --palette-specific-ffffff: #FFFFFF;
+}
+
+:root[data-theme="green-light"] {
+  --color-primary: var(--palette-forest-800);
+  --color-primary-hover: var(--palette-specific-123123);
+  --color-primary-active: var(--palette-specific-0b241a);
+  --color-on-primary: var(--palette-specific-ffffff);
+  --color-accent: var(--palette-orange-500);
+  --color-on-accent: var(--palette-specific-ffffff);
+  --color-bg-page: var(--palette-neutral-100);
+  --color-bg-surface: var(--palette-green-neutral-50);
+  --color-bg-elevated: var(--palette-specific-ffffff);
+  --color-bg-subtle: var(--palette-green-neutral-200);
+  --color-bg-inverse: var(--palette-forest-800);
+  --color-text-primary: var(--palette-forest-900);
+  --color-text-secondary: var(--palette-green-neutral-800);
+  --color-text-muted: var(--palette-green-neutral-700);
+  --color-text-inverse: var(--palette-specific-ffffff);
+  --color-text-link: var(--palette-specific-176747);
+  --color-border-default: var(--palette-green-neutral-400);
+  --color-border-subtle: var(--palette-green-neutral-300);
+  --color-border-strong: var(--palette-green-neutral-600);
+  --color-border-focus: var(--palette-orange-500);
+  --color-interactive-hover: var(--palette-specific-e8ede4);
+  --color-interactive-active: var(--palette-specific-d8e4d9);
+  --color-selected-bg: var(--palette-specific-e0efe2);
+  --color-selected-border: var(--palette-specific-1a6b47);
+  --color-disabled-bg: var(--palette-specific-e6e9e2);
+  --color-disabled-text: var(--palette-specific-758078);
+  --color-success: var(--palette-specific-237a4b);
+  --color-success-bg: var(--palette-specific-e5f4ea);
+  --color-warning: var(--palette-specific-b56b11);
+  --color-warning-bg: var(--palette-specific-fff1d9);
+  --color-error: var(--palette-specific-c83c3c);
+  --color-error-bg: var(--palette-specific-fce8e8);
+  --color-info: var(--palette-specific-256cb4);
+  --color-info-bg: var(--palette-specific-e6f0fc);
+  --color-overlay: var(--palette-specific-07190eb3);
+  --color-feature-bg: var(--palette-forest-800);
+  --color-feature-card-bg: var(--palette-specific-284c3b);
+  --color-feature-text: var(--palette-specific-ffffff);
+  --color-feature-text-muted: var(--palette-specific-d0ddd4);
+}
+
+:root[data-theme="gold-light"] {
+  --color-primary: var(--palette-charcoal-800);
+  --color-primary-hover: var(--palette-specific-1b1c1d);
+  --color-primary-active: var(--palette-specific-111213);
+  --color-on-primary: var(--palette-specific-ffffff);
+  --color-accent: var(--palette-gold-600);
+  --color-on-accent: var(--palette-specific-ffffff);
+  --color-bg-page: var(--palette-specific-f6f1eb);
+  --color-bg-surface: var(--palette-neutral-50);
+  --color-bg-elevated: var(--palette-specific-ffffff);
+  --color-bg-subtle: var(--palette-specific-ece5dc);
+  --color-bg-inverse: var(--palette-charcoal-800);
+  --color-text-primary: var(--palette-charcoal-900);
+  --color-text-secondary: var(--palette-specific-505052);
+  --color-text-muted: var(--palette-specific-777477);
+  --color-text-inverse: var(--palette-specific-ffffff);
+  --color-text-link: var(--palette-specific-9c6215);
+  --color-border-default: var(--palette-neutral-400);
+  --color-border-subtle: var(--palette-specific-e8dfd4);
+  --color-border-strong: var(--palette-specific-a89b8c);
+  --color-border-focus: var(--palette-gold-600);
+  --color-interactive-hover: var(--palette-specific-eee5d9);
+  --color-interactive-active: var(--palette-specific-e2d3be);
+  --color-selected-bg: var(--palette-specific-f4e6ce);
+  --color-selected-border: var(--palette-gold-600);
+  --color-disabled-bg: var(--palette-specific-e7e1da);
+  --color-disabled-text: var(--palette-neutral-700);
+  --color-success: var(--palette-specific-237a4b);
+  --color-success-bg: var(--palette-specific-e5f4ea);
+  --color-warning: var(--palette-specific-a45f11);
+  --color-warning-bg: var(--palette-specific-fff1d9);
+  --color-error: var(--palette-specific-c83c3c);
+  --color-error-bg: var(--palette-specific-fce8e8);
+  --color-info: var(--palette-specific-256cb4);
+  --color-info-bg: var(--palette-specific-e6f0fc);
+  --color-overlay: var(--palette-specific-101010b3);
+  --color-feature-bg: var(--palette-charcoal-800);
+  --color-feature-card-bg: var(--palette-charcoal-700);
+  --color-feature-text: var(--palette-specific-ffffff);
+  --color-feature-text-muted: var(--palette-specific-d5d5d5);
+}
+
+/* Example usage: background: var(--color-bg-page); */
+:root { color-scheme: light; }
+body { background: var(--color-bg-page); color: var(--color-text-primary); }
