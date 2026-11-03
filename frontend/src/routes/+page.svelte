@@ -30,7 +30,7 @@
 		<nav class="primary-nav" aria-label="Primary navigation">
 			<a href="#features">Features</a>
 			<a href="#how-it-works">How it works</a>
-			<a href="#login">Log in</a>
+			<a href="/login">Log in</a>
 			<a class="nav-cta" href="#register">Register</a>
 			<div class="theme-switcher" aria-label="Choose colour theme">
 				<button type="button" class:active={theme === 'green-light'} aria-label="Use forest and orange theme" aria-pressed={theme === 'green-light'} onclick={() => setTheme('green-light')}>
@@ -55,7 +55,7 @@
 				<p class="hero-copy">Plan your CCTV system, select equipment, and estimate<br class="desktop-break" /> storage and bandwidth in one place.</p>
 				<div class="hero-actions">
 					<a id="register" class="button button-primary" href="#features">Register <span>→</span></a>
-					<a id="login" class="button button-secondary" href="#features">Log in</a>
+					<a id="login" class="button button-secondary" href="/login">Log in</a>
 				</div>
 			</div>
 		</section>
